@@ -65,7 +65,7 @@ Asegúrate de tener instalados los siguientes programas:
     git clone https://github.com/HDZR24/Proyecto-Analisis-Sentimientos.git
     cd proyecto-IA
     ```
-### Ejecutar backend
+
 ## Ejecutar el Backend
 
 Una vez que hayas instalado todas las dependencias necesarias, puedes iniciar el backend :
@@ -86,7 +86,7 @@ uvicorn backend.main:app --reload
 ```
 Nota: Esperar a los mensajes de confirmacion de funcionamiento
 
-### Ejecutar el Frontend
+## Ejecutar el Frontend
 
 1. **Navega a la carpeta del frontend**:
     ```bash
