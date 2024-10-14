@@ -74,15 +74,17 @@ Una vez que hayas instalado todas las dependencias necesarias, puedes iniciar el
 1. **Navega a la carpeta del backend** (si es necesario):
 
 
-Nota: E el archivo main.py no está en la raíz del proyecto y se encuentra dentro de la carpeta backend, utiliza el siguiente comando:
-Ejecutar el servidor de FastAPI: Inicia el servidor c
+Nota: El archivo main.py no está en la raíz del proyecto, este se encuentra dentro de la carpeta backend, utiliza el siguiente comando:
+Ejecutar el servidor de FastAPI: Inicia el servidor 
+
 ```bash
-uvicorn main:app --reload
+uvicorn backend.main:app --reload
 ```
 Asi ubcando el main dentro de la carpeta "backend" del proyecto.
-Si este se encontrara fuera en la carpeta raiz ejecutaria el siguiente comando:
-```
-uvicorn backend.main:app --reload
+
+Si este se encontrara fuera en la carpeta raiz entonces se ejecutaria el siguiente comando:
+```bash
+uvicorn main:app --reload
 ```
 Nota: Esperar a los mensajes de confirmacion de funcionamiento
 
