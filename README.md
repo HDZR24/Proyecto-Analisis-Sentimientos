@@ -104,6 +104,10 @@ Nota: Esperar a los mensajes de confirmacion de funcionamiento
    ```bash
    cd C:\ruta\al\proyecto\frontend
    ```
+Ejecuta el siguiente comando para abrir el archivo en tu navegador predeterminado
+   ```bash
+   start index.html
+   ```
    
 ## Uso
 
