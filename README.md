@@ -14,7 +14,7 @@ Este proyecto es una aplicación web que permite a los usuarios grabar audio, tr
 - **`backend/main.py`**: Este es el archivo principal del backend, donde se configura la aplicación FastAPI. 
 - **`frontend/app.js`**: Este archivo contiene la lógica del frontend de la aplicación. 
 - **`frontend/index.html`**: Este es el archivo HTML que define la estructura y el diseño de la interfaz de usuario.
-- **`uploads/`**: Esta carpeta se utiliza para almacenar temporalmente los archivos de audio que se suben a la aplicación. Cada grabación se guarda aquí antes de ser procesada y transcrita.
+- **`uploads/`**: Esta carpeta se utiliza para almacenar temporalmente los archivos de audio que se suben a la aplicación. 
 - **`transcriptions.csv`**: Este archivo CSV almacena las transcripciones de audio junto con su correspondiente análisis de sentimientos. Cada fila contiene el nombre del archivo, la transcripción textual y el sentimiento detectado, lo que permite un fácil acceso y visualización de los datos procesados.
 
 
