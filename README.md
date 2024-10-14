@@ -23,7 +23,6 @@ Se utiliza el modelo `nlptown/bert-base-multilingual-uncased-sentiment`, que cla
 - **2 estrellas**: triste
 - **1 estrella**: enojado
 
-## Instrucciones para la Instalación
 ## Instalación de Dependencias
 
 ### Requisitos Previos
@@ -37,15 +36,6 @@ Asegúrate de tener instalados los siguientes programas:
     ```
 
     Si no tienes Python, descárgalo desde [python.org](https://www.python.org/downloads/).
-
-- **Node.js y npm**: Verifica si están instalados con:
-
-    ```bash
-    node --version
-    npm --version
-    ```
-
-    Si no tienes Node.js, descárgalo desde [nodejs.org](https://nodejs.org/).
 
 ### Instalación de Dependencias del Backend
 
@@ -72,7 +62,7 @@ Asegúrate de tener instalados los siguientes programas:
     pip install pandas
     ```
 
-### Instalación de Dependencias del Frontend
+### Ejecutar el Frontend
 
 1. **Navega a la carpeta del frontend**:
 
@@ -80,20 +70,32 @@ Asegúrate de tener instalados los siguientes programas:
     cd ../frontend
     ```
 
-2. **Si tienes un archivo `package.json`**, ejecuta el siguiente comando para instalar todas las dependencias listadas:
+2. **Abre el archivo `index.html` en tu navegador**:
+
+    - En **macOS**:
 
     ```bash
-    npm install
+    open index.html
     ```
 
-   Si no tienes un archivo `package.json` y no necesitas bibliotecas adicionales, puedes omitir este paso.
+    - En **Linux**:
+
+    ```bash
+    xdg-open index.html
+    ```
+
+    - En **Windows**:
+
+    ```bash
+    start index.html
+    ```
 
 ### Resumen
 
-- Asegúrate de tener Python y Node.js instalados.
+- Asegúrate de tener Python instalado.
 - Clona el repositorio y navega a las carpetas correspondientes.
 - Instala las dependencias del backend manualmente utilizando `pip`.
-- Si es necesario, instala las dependencias del frontend utilizando `npm`.
+- Abre el archivo `index.html` en tu navegador para acceder al frontend.
 
 
 
