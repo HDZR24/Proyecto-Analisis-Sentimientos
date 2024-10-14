@@ -24,12 +24,76 @@ Se utiliza el modelo `nlptown/bert-base-multilingual-uncased-sentiment`, que cla
 - **1 estrella**: enojado
 
 ## Instrucciones para la Instalación
+## Instalación de Dependencias
 
-**Clonar el repositorio**:
-```
-   git clone <URL_DEL_REPOSITORIO>
-   cd <NOMBRE_DEL_REPOSITORIO>
-```
+### Requisitos Previos
+
+Asegúrate de tener instalados los siguientes programas:
+
+- **Python 3.8 o superior**: Verifica la versión instalada con:
+
+    ```bash
+    python --version
+    ```
+
+    Si no tienes Python, descárgalo desde [python.org](https://www.python.org/downloads/).
+
+- **Node.js y npm**: Verifica si están instalados con:
+
+    ```bash
+    node --version
+    npm --version
+    ```
+
+    Si no tienes Node.js, descárgalo desde [nodejs.org](https://nodejs.org/).
+
+### Instalación de Dependencias del Backend
+
+1. **Clona el repositorio** (si aún no lo has hecho):
+
+    ```bash
+    git clone https://github.com/tu-usuario/proyecto-grabacion-audio.git
+    cd proyecto-grabacion-audio
+    ```
+
+2. **Navega a la carpeta del backend**:
+
+    ```bash
+    cd backend
+    ```
+
+3. **Instala las dependencias necesarias manualmente** ejecutando los siguientes comandos:
+
+    ```bash
+    pip install fastapi
+    pip install uvicorn
+    pip install git+https://github.com/openai/whisper.git
+    pip install transformers
+    pip install pandas
+    ```
+
+### Instalación de Dependencias del Frontend
+
+1. **Navega a la carpeta del frontend**:
+
+    ```bash
+    cd ../frontend
+    ```
+
+2. **Si tienes un archivo `package.json`**, ejecuta el siguiente comando para instalar todas las dependencias listadas:
+
+    ```bash
+    npm install
+    ```
+
+   Si no tienes un archivo `package.json` y no necesitas bibliotecas adicionales, puedes omitir este paso.
+
+### Resumen
+
+- Asegúrate de tener Python y Node.js instalados.
+- Clona el repositorio y navega a las carpetas correspondientes.
+- Instala las dependencias del backend manualmente utilizando `pip`.
+- Si es necesario, instala las dependencias del frontend utilizando `npm`.
 
 
 
