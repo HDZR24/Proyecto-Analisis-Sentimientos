@@ -15,9 +15,8 @@ Este proyecto permite grabar audio desde el frontend, transcribirlo usando Whisp
 
 ### 1. Clonar el repositorio
 
-```bash
-git clone https://github.com/tu-usuario/proyecto-grabacion-audio.git
-cd proyecto-grabacion-audio
+cd backend
+pip install -r requirements.txt
 
 
 2. Instalar dependencias en el backend
