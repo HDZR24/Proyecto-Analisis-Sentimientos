@@ -1,36 +1,35 @@
-# Proyecto-Analisis-Sentimientos
-Proyecto creado con HTML,CSS, JavaScript, Python.
-# Proyecto de Grabación de Audio y Análisis de Sentimientos
+# Grabador de Audio y Análisis de Sentimiento
 
-Este proyecto permite grabar audio desde el frontend, transcribirlo usando Whisper y realizar un análisis de sentimiento utilizando un modelo multilingüe en el backend.
+Este proyecto es una aplicación web que permite a los usuarios grabar audio, transcribirlo y analizar el sentimiento de las transcripciones utilizando modelos de aprendizaje automático. La aplicación utiliza FastAPI en el backend y JavaScript en el frontend.
 
 ## Características
 
-- Grabación de audio en el navegador.
-- Transcripción automática del audio con Whisper.
-- Análisis de sentimiento utilizando un modelo multilingüe.
-- Soporte para múltiples sentimientos: feliz, contento, neutral, triste, enojado y sorprendido.
+- **Grabación de audio**: Los usuarios pueden grabar su voz y enviar la grabación al servidor.
+- **Transcripción automática**: Utiliza el modelo Whisper para transcribir el audio grabado.
+- **Análisis de sentimiento**: Emplea un modelo de análisis de sentimientos multilingüe para clasificar el tono emocional de la transcripción en categorías como feliz, contento, sorprendido, neutral, triste y enojado.
+- **Interfaz de usuario simple**: Una interfaz limpia y fácil de usar para interactuar con las funcionalidades.
 
-## Instalación
+## Modelos Utilizados
 
-### 1. Clonar el repositorio
+### Whisper
+Whisper es un modelo de transcripción de audio que permite convertir el habla en texto de manera eficiente y precisa. Este modelo es capaz de manejar varios idiomas y diferentes acentos.
 
-cd backend
-pip install -r requirements.txt
+### Análisis de Sentimiento
+Se utiliza el modelo `nlptown/bert-base-multilingual-uncased-sentiment`, que clasifica el sentimiento en una escala de 1 a 5 estrellas. Las etiquetas de sentimiento se interpretan como:
+
+- **5 estrellas**: feliz
+- **4 estrellas**: contento
+- **3 estrellas**: neutral/sorprendido (con detección de ciertas palabras)
+- **2 estrellas**: triste
+- **1 estrella**: enojado
+
+## Instrucciones para la Instalación
+
+**Clonar el repositorio**:
+```
+   git clone <URL_DEL_REPOSITORIO>
+   cd <NOMBRE_DEL_REPOSITORIO>
+```
 
 
-cd backend
-pip install -r requirements.txt
-cd backend
-pip install -r requirements.txt
 
-
-###  Instalar dependencias en el backend
-Asegúrate de tener Python 3.8+ instalado. Luego, instala las dependencias del backend utilizando pip:
-
-Dependencias principales:
-
--fastapi: Framework para construir la API backend.
--whisper: Para la transcripción de audio.
--transformers: Biblioteca que incluye el modelo de análisis de sentimientos.
--pandas: Para manejar y guardar los datos de transcripciones.
