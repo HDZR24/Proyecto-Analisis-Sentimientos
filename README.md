@@ -63,7 +63,7 @@ Asegúrate de tener instalados los siguientes programas:
 
     ```bash
     git clone https://github.com/HDZR24/Proyecto-Analisis-Sentimientos.git
-    cd proyecto-IA
+    cd Proyecto IA
     ```
 
 ## Ejecutar el Backend
