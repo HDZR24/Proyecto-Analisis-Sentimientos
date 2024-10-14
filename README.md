@@ -1,4 +1,4 @@
-# Grabador de Audio y Análisis de Sentimiento
+# Proyecto de Grabación de Audio y Análisis de Sentimientos
 
 Este proyecto es una aplicación web que permite a los usuarios grabar audio, transcribirlo y analizar el sentimiento de las transcripciones utilizando modelos de aprendizaje automático. La aplicación utiliza FastAPI en el backend y JavaScript en el frontend.
 
@@ -8,6 +8,15 @@ Este proyecto es una aplicación web que permite a los usuarios grabar audio, tr
 - **Transcripción automática**: Utiliza el modelo Whisper para transcribir el audio grabado.
 - **Análisis de sentimiento**: Emplea un modelo de análisis de sentimientos multilingüe para clasificar el tono emocional de la transcripción en categorías como feliz, contento, sorprendido, neutral, triste y enojado.
 - **Interfaz de usuario simple**: Una interfaz limpia y fácil de usar para interactuar con las funcionalidades.
+
+
+## Archivos
+- **`backend/main.py`**: Este es el archivo principal del backend, donde se configura la aplicación FastAPI. 
+- **`frontend/app.js`**: Este archivo contiene la lógica del frontend de la aplicación. 
+- **`frontend/index.html`**: Este es el archivo HTML que define la estructura y el diseño de la interfaz de usuario.
+- **`uploads/`**: Esta carpeta se utiliza para almacenar temporalmente los archivos de audio que se suben a la aplicación. Cada grabación se guarda aquí antes de ser procesada y transcrita.
+- **`transcriptions.csv`**: Este archivo CSV almacena las transcripciones de audio junto con su correspondiente análisis de sentimientos. Cada fila contiene el nombre del archivo, la transcripción textual y el sentimiento detectado, lo que permite un fácil acceso y visualización de los datos procesados.
+
 
 ## Modelos Utilizados
 
@@ -38,22 +47,9 @@ Asegúrate de tener instalados los siguientes programas:
 
     Si no tienes Python, descárgalo desde [python.org](https://www.python.org/downloads/).
 
-### Instalación de Dependencias del Backend
+### Instalación de Dependencias
 
-1. **Clona el repositorio** (si aún no lo has hecho):
-
-    ```bash
-    git clone https://github.com/tu-usuario/proyecto-grabacion-audio.git
-    cd proyecto-grabacion-audio
-    ```
-
-2. **Navega a la carpeta del backend**:
-
-    ```bash
-    cd backend
-    ```
-
-3. **Instala las dependencias necesarias manualmente** ejecutando los siguientes comandos:
+1. **Instala las dependencias necesarias ** ejecutando los siguientes comandos:
 
     ```bash
     pip install fastapi
@@ -63,16 +59,40 @@ Asegúrate de tener instalados los siguientes programas:
     pip install pandas
     ```
 
+2. **Clona el repositorio** (opcional):
+
+    ```bash
+    git clone https://github.com/HDZR24/Proyecto-Analisis-Sentimientos.git
+    cd proyecto-IA
+    ```
+### Ejecutar backend
+## Ejecutar el Backend
+
+Una vez que hayas instalado todas las dependencias necesarias, puedes iniciar el backend :
+
+
+1. **Navega a la carpeta del backend** (si es necesario):
+
+
+Nota: E el archivo main.py no está en la raíz del proyecto y se encuentra dentro de la carpeta backend, utiliza el siguiente comando:
+Ejecutar el servidor de FastAPI: Inicia el servidor c
+```bash
+uvicorn main:app --reload
+```
+Asi ubcando el main dentro de la carpeta "backend" del proyecto.
+Si este se encontrara fuera en la carpeta raiz ejecutaria el siguiente comando:
+```
+uvicorn backend.main:app --reload
+```
+Nota: Esperar a los mensajes de confirmacion de funcionamiento
+
 ### Ejecutar el Frontend
 
 1. **Navega a la carpeta del frontend**:
-
     ```bash
     cd ../frontend
     ```
-
 2. **Abre el archivo `index.html` en tu navegador**:
-
 
 ### Opción 1: Usar el Explorador de Archivos
 1. Navega a la carpeta `frontend` donde se encuentra el archivo `index.html`.
