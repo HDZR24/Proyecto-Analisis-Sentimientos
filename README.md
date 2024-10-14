@@ -44,11 +44,6 @@ El backend estará disponible en http://127.0.0.1:8000.
 Ve a la carpeta frontend y abre el archivo index.html en tu navegador:
 
 
-cd ../frontend
-open index.html  # macOS
-# O bien:
-xdg-open index.html  # Linux
-start index.html  # Windows
 
 
 Este archivo permite interactuar con la API del backend para grabar audio, enviar la grabación y ver los resultados del análisis de sentimientos.
