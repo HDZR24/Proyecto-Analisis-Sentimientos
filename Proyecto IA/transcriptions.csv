@@ -1,1 +1,4 @@
 id,filename,transcription,sentiment
+1,grabacion.mp3," Hola, la verdad, me siento muy feliz de estar aquí, quiero intentar cosas nuevas.",feliz (5 stars)
+2,grabacion.mp3, estoy dudando de mi capacidad para hacer las cosas y la verdad no sé qué hacer,triste (2 stars)
+3,grabacion.mp3, ¿Qué interesante sería podria darme la información al respeto?,neutral (3 stars)
