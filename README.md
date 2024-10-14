@@ -23,6 +23,7 @@ Se utiliza el modelo `nlptown/bert-base-multilingual-uncased-sentiment`, que cla
 - **2 estrellas**: triste
 - **1 estrella**: enojado
 
+Cabe resaltar que se trata de un modelo multilingüe y que detecta normalmente el español
 ## Instalación de Dependencias
 
 ### Requisitos Previos
@@ -72,30 +73,48 @@ Asegúrate de tener instalados los siguientes programas:
 
 2. **Abre el archivo `index.html` en tu navegador**:
 
-    - En **macOS**:
 
-    ```bash
-    open index.html
-    ```
+### Opción 1: Usar el Explorador de Archivos
+1. Navega a la carpeta `frontend` donde se encuentra el archivo `index.html`.
+2. Haz doble clic en el archivo `index.html`. Esto abrirá el archivo en tu navegador predeterminado.
 
-    - En **Linux**:
+### Opción 2: Usar la línea de comandos
+1. Abre el símbolo del sistema (CMD).
+2. Navega a la carpeta `frontend` utilizando el comando `cd`. Por ejemplo:
+   ```bash
+   cd C:\ruta\al\proyecto\frontend
+   ```
+   
+## Uso
 
-    ```bash
-    xdg-open index.html
-    ```
+1. **Presiona el botón Grabar** para iniciar la grabación de tu voz.
+2. **Una vez finalizada, presiona Detener.**
+3. **Haz clic en Enviar** para cargar la grabación al servidor.
+4. **El resultado mostrará** la transcripción del audio y el sentimiento detectado.
+5. **El histórico de transcripciones** también será visible en la parte inferior.
 
-    - En **Windows**:
+## Escalabilidad del modelo de sentimientos
 
-    ```bash
-    start index.html
-    ```
+En esta implementación, el modelo de análisis de sentimientos se basa en el modelo `nlptown/bert-base-multilingual-uncased-sentiment` de Hugging Face, que fue entrenado para clasificar opiniones con un sistema de "estrellas" de 1 a 5. Cada número de estrellas en el modelo original refleja una emoción como sigue:
 
-### Resumen
+- **1 estrella**: Muy negativo
+- **2 estrellas**: Negativo
+- **3 estrellas**: Neutral
+- **4 estrellas**: Positivo
+- **5 estrellas**: Muy positivo
 
-- Asegúrate de tener Python instalado.
-- Clona el repositorio y navega a las carpetas correspondientes.
-- Instala las dependencias del backend manualmente utilizando `pip`.
-- Abre el archivo `index.html` en tu navegador para acceder al frontend.
+### Adaptación del modelo original
 
+En esta versión del proyecto, hemos adaptado los resultados para que los sentimientos sean más específicos:
+
+- **5 estrellas**: Feliz
+- **4 estrellas**: Contento
+- **3 estrellas**: Neutral o Sorprendido (dependiendo de palabras clave como "sorprendido" o signos de exclamación).
+- **2 estrellas**: Triste
+- **1 estrella**: Enojado
+
+### Sentimiento de "Sorprendido"
+
+El sentimiento de sorprendido fue añadido basándonos en características específicas del texto transcrito. Si la transcripción contiene ciertas palabras o signos de exclamación, se clasifica como sorprendido. Esto permite identificar situaciones en las que el usuario expresa una emoción de sorpresa, lo que no está presente en el modelo original de estrellas.
 
 
