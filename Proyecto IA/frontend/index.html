@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ajusta la vista en dispositivos móviles -->
+    <title>Grabador de Audio</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Vinculación de la hoja de estilos CSS -->
+</head>
+<body>
+    <h1>Grabador de Audio</h1> <!-- Título principal de la aplicación -->
+
+    <button id="recordBtn">Grabar</button>
+
+    <button id="sendBtn" disabled>Enviar</button>
+
+    <div class="result">
+        <h2>Análisis de Sentimiento</h2> 
+        
+        <div id="sentimentResult">Esperando grabación...</div>
+        
+        <!-- Lista para mostrar las transcripciones anteriores y su sentimiento -->
+        <ul id="transcriptionsList"></ul>
+    </div>
+
+    <!-- Vinculación del archivo JavaScript que contiene la lógica de la aplicación -->
+    <script src="app.js"></script>
+</body>
+</html>
